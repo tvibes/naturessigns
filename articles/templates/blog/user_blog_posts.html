@@ -1,0 +1,51 @@
+{% extends "base_file.html" %}
+{% load 'static' %}
+
+{% block view_blog %}
+    <main role="main" class="article_list" style="margin-top: 110px; margin-bottom: 70px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h3 class="mb-3">Articles by {{view.kwargs.username}} ({{page_obj.paginator.count}})</h3> 
+                    {% if articles %}
+                    {% for article in articles %}
+                        {% if article.title %}
+                        <!-- Article Start --> 
+                        <div class="article-metadata">
+                            <a class="mr-2" href="{% url 'user_article' article.created_by.username %}">{{article.created_by}}</a>
+                            <small class="text-muted">{{article.date}}</small>
+                        </div>                      
+                        <h5><a href="{% url 'article_detail' slug=article.slug %}">{{article.title}}</a></h5>
+                        <p>Published: {{article.date}}</p>                                             
+                        {% endif %}
+                    {% endfor %}
+                    {% if is_paginated %}
+                        {% if page_obj.has_previous %}
+                            <a class="btn btn-outline-info mb-4" href="?page=1">first</a>
+                            <a class="btn btn-outline-info mb-4" href="?page={{page_obj.previous_page_number}}">previous</a>
+                        {% endif %}
+                        
+                        {% for num in page_obj.paginator.page_range %}
+                            {% if page_obj.number == num %}
+                                <a class="btn btn-info mb-4" href="?page={{num}}">{{num}}</a>
+                            {% endif %}         
+                        {% endfor %}
+
+                        {% if page_obj.has_next %}
+                            <a class="btn btn-outline-info mb-4" href="?page={{page_obj.next_page_number}}">next</a>
+                            <a class="btn btn-outline-info mb-4" href="?page={{page_obj.paginator.num_pages}}">last</a>
+                        {% endif %}
+                    {% endif %}
+                </div>          
+                    {% include "blog/article_sidebar.html" %}
+                    {% else %}
+                    <div class="row">
+                        <div class="offset-lg-5 col-lg-12">
+                            <h4 class="no-artisans">There are no articles to display currently, kindly check back later!</h4>
+                        </div>
+                     </div>   
+                   {% endif %}
+            </div>
+        </div>
+    </main>
+{% endblock view_blog %}

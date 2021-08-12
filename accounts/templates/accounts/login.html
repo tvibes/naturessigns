@@ -1,0 +1,35 @@
+{% extends 'base_layout.html' %}
+{% load crispy_forms_tags %}
+{% block user %}
+<section class="user-screen">
+    <div class="container">
+        <div class="row">
+            <div class="login-main offset-md-4  col-md-6 col-sm-6 mb-0">
+                <div class="login-screen-wrap">
+                    <div class=" col-lg-8 col-md-12 col-sm-12 user-input">
+                        <form class="user-login-form" action="{% url 'login' %}" method="post">
+                            {% csrf_token %}
+                            {{ form|crispy }}
+                            {% if request.GET.next %}
+                            <input type="hidden" name="next" value="{{ request.GET.next }}">
+                            {% endif %}
+                            <br>
+                            <button type="submit" class="login-btn btn btn-success btn-block">Log
+                                In</button>
+                        </form>
+                        <br>
+                        <a class="forgot_passwor_link" href="{% url 'reset_password' %}">I can't access my account</a>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <br>
+                                <a href="{% url 'signup' %}" class="btn btn-link pl-0 mb-5 create_new_account">Create
+                                    New Account</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

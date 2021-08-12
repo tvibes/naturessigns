@@ -1,0 +1,42 @@
+{% extends "base_layout.html" %}
+{% load static %}
+
+{% block content %}
+    <section class="store-items" style="margin-top: 60px;">
+        {% if items %}
+        <div class="container">
+            <div class="row">
+                    {% for item in items %}
+                        {% if item.image %}
+                            <!-- A Product Start -->
+                            <div class="col-md-3 col-sm-3">
+                                <div class="card" style="width: 18rem;">
+                                    <a href="{% url 'product_detail'  %}"><img src="{{ item.image.url }}" class="img-responsive "></a>
+                                    <div class="card-body">
+                                        <h5 class="card-title"><a class="item-title" href="#">{{ item.title }}</a></h5>
+                                        <h5><strong>{{item.price}}</strong></h5>
+                                        <p class="card-text">{{item.description}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endif %}
+                    {% endfor %}   
+            </div>
+        </div>
+        {% else %}
+        <div class="container">
+            <div class="row">
+                <div class="card m-auto">
+                    <div class="card-body mt-2 mb-2">
+                        <h3 class="card-title">
+                            <p class="card-text">
+                                No items to display at the moment: "{{query}}"
+                            </p>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+    </section>     
+{% endblock %}

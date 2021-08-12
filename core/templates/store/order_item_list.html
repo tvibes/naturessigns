@@ -1,0 +1,62 @@
+{% extends "base_layout.html" %}
+{% load static %}
+
+{% block title %}
+   <title> Nature's Sign Ltd | Products: ProstaRight Tea, and More</title>
+{% endblock %}
+
+<!-- Some meta tags-->
+{% block meta_tags %}
+<meta name="description"
+    content="Nature's Packages and Markets Proven Natural Health Products Trusted and Used By Many">
+{% endblock %}
+
+{% block  content %}
+<section class="order-items-list text-center">
+    <div class="container">
+        <div class="row wow fadeIn">
+            {% if items %}
+            {% for item in items %}
+            {% if item.image %}
+            <!-- A Product Start -->
+            <div class="col-md-3 col-sm-3">
+                <div class="card">
+                    <a href="{% url 'product_detail' slug=item.slug %}"><img src="{{ item.image.url }}"
+                            class="img-responsive "></a>
+                    <div class="card-body text-center">
+                        <strong>
+                            <a href="{% url 'product_detail' slug=item.slug %}" class="dark-grey-text">{{item.title}}
+                                <span class="badge badge-pill danger-color">New</span>
+                            </a>
+                        </strong>
+                        {% if item.discount_price %}
+                        <span class="mr-1">
+                            <del><del class="currency">N</del>{{ item.price }}</del>
+                        </span>
+                        <span><span>Slashed: </span><del class="currency">N</del>{{ item.discount_price }}</span>
+                        {% else %}
+                        <span><del class="currency">N</del>{{ item.price }}</span>
+                        {% endif %}
+                        <p>{{ item.description }}</p>
+                    </div>
+                    <a href="{{ item.get_add_to_cart_url }}" class="btn btn-success btn-sm my-0 p">
+                        Add to cart
+                        <i class="fa fa-shopping-cart ml-1"></i>
+                    </a>
+                </div>
+            </div>
+            {% endif %}
+        {% endfor %}
+        </div>
+        
+        {% else %}
+        <div class="col-lg-12">
+            <div class="alert alert-info mt-5 text-center">
+                No product to display at this moment, kindly check back later!
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</section>
+
+{% endblock %}

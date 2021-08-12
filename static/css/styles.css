@@ -1,0 +1,1172 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+html, body {
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    border: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+
+/* Nav styles */
+nav.navbar {
+    background: #fff !important;
+    padding-right: 30px !important;
+    padding-left: 30px !important;
+}
+
+ul.navbar-nav a {
+    text-transform: uppercase !important;
+    font-size: 0.8rem;
+}
+
+ul.navbar-nav.left {
+    font-weight: 700;
+}
+
+button.search-btn {
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0;
+    background: rgb(247, 245, 245);
+}
+
+.form-control.mr-md-2.nav-search-box{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    background: rgb(247, 245, 245);
+    font-size: 13px;
+}
+
+.signup-btn,.login-btn {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+a.signup-btn.nav-link.nav-btn.btn.btn-outline-dark:hover {
+    color: #fff;
+}
+
+.login-btn {
+    background: rgb(52, 170, 101);
+    border-color: rgb(52, 170, 101);
+    color: #ffffff !important;
+}
+
+a.dropdown-item.user-dropdown {
+    text-transform: capitalize !important;
+    line-height: 25px;
+}
+
+.btn-group.ml-3:hover>.dropdown-menu {
+    display: block !important;
+    margin-top: 0;
+  }
+  
+  .btn-group.ml-3>.dropdown-toggle:active {
+    pointer-events: none;
+  }
+
+.orders-btn.nav-link.nav-btn.btn.btn-outline-dark.mt-2 {
+    text-transform: capitalize !important;
+    background: none;
+    color: black;  
+    padding: 4px 8px;
+}
+
+.orders-btn.nav-link.nav-btn.btn.btn-outline-dark.mt-2:hover {
+    color: #fff;
+    background: #031220;
+}
+
+ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;
+}
+
+.navbar-nav .dropdown-menu{
+    float: left !important;
+    left: -50%;
+}
+
+select:focus {
+    box-shadow: none;
+  }
+/* Bootstrap container fluid styles */
+.container-fluid {
+    padding-right: 30px !important;
+    padding-left: 30px !important;
+}
+
+/* Hero section */
+section#hero-section {
+    min-height: 500px;
+    margin-top: 85px;
+    background: url(../images/hero/prostate.png) no-repeat center center fixed;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;
+    opacity: 5
+}
+
+.hero-content-wrapper {
+    padding-top: 70px;
+}
+
+.hero-content h1 {
+    width: 55%;
+    color: rgba(255, 255, 255, 0.952);
+    font-weight: 500;
+}
+
+.hero-content p{
+    color: whitesmoke;
+    width: 60%;
+    font-size: 1.3rem;
+    line-height: 30px;
+    margin-top: 20px;
+}
+
+.btn.explore-benefits-cta {
+    margin-top: 20px;
+    background: rgb(32, 170, 32);
+    border: 1px white;
+    text-transform: uppercase;
+    color: #fff !important;
+    font-weight: 500;
+    min-height: 37px;
+}
+
+.btn.explore-benefits-cta:hover {
+    background-color: black;
+    color: white !important;
+}
+
+/* featured-product section */
+section#featured-product {
+    min-height: 300px;
+    padding-bottom: 45px;
+}
+
+.product-highlight-card {
+    background: rgb(219, 215, 215);
+    min-height: 350px;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    width: 100% !important;
+}
+
+.highlight-content-wrap {
+    padding-top: 60px;
+    padding-left: 85px;
+    padding-right:  85px;
+
+}
+
+a.dark-grey-text {
+    color: black !important;
+}
+
+.col-sm-12.col-md-6.content-1 p, .col-sm-12.col-md-6.content-2 p {
+    width: 85%;
+}
+
+.col-sm-12.col-md-6.content-1 h2 {
+    font-weight: 600;
+}
+
+.col-sm-12.col-md-6.content-2 h2 {
+    margin-left: 80px;
+    font-weight: 600;
+}
+
+.col-sm-12.col-md-6.content-1 p {
+    font-size: 1rem;
+    color: rgb(90, 87, 87);
+    line-height: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.col-sm-12.col-md-6.content-2 p {
+    margin-left: 80px;
+    font-size: 1rem;
+    color: rgb(90, 87, 87);
+    line-height: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+a.btn.vision-mission-btn {
+    color: black;
+    text-transform: capitalize;
+    text-align: center;
+    color: rgb(52, 170, 101);
+    margin-left: 100px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    transform: skew(-10deg);
+}
+
+a.btn.product-line-btn {
+    color: black;
+    text-transform: capitalize;
+    text-align: center;
+    color: rgb(52, 170, 101);
+    margin-left: 150px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    transform: skew(-10deg);
+}
+
+a.btn.vision-mission-btn:hover, a.btn.product-line-btn:hover {
+    color: rgb(52, 170, 101);
+}
+
+.fa.fa-1x.fa-angle-double-right::before {
+    font-weight: 500 !important;
+}
+
+section#featured-product h3{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: black;
+}
+
+.card.featured-cards {
+   border: none;
+   text-align: center;
+   line-height: 30px;
+}
+
+/* Buy items section */
+section#buy-items {
+    padding-bottom: 45px;
+    padding-top: 45px;
+}
+
+.items-section-wrap {
+    padding-top: 15px;
+}
+
+.card.product-info {
+    border-top: 1px solid rgba(0,0,0,.125);
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    border-radius: 0;
+    color: #777;
+    margin-top: 10px;
+}
+
+.card.product-info p {
+    line-height: 30px;
+    padding: 20px 0;
+    text-align: left !important;
+}
+
+h4.item-order.card-title.text-center{
+    color: rgb(53, 51, 51);
+    font-size: 0.9rem;
+}
+
+h5.item-order.card-text.text-center{
+    color: rgb(29, 26, 26);
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+a.buy_item.offset-2.col-md-3 {
+    text-decoration: none;
+    border-bottom: none !important;
+}
+
+section#buy-items h6{
+    font-weight: 700;
+}
+
+section#approach {
+    background: rgba(14, 168, 168, 0.863);
+    min-height: 300px;
+    margin-top: 70px;
+}
+
+.col-md-6.approach-img img {
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.col-md-6.approach-img img:hover {
+    transform: scaleX(-1);
+}
+
+.col-md-6.approach-content {
+    padding-left: 45px;
+    padding-top: 60px;
+}
+
+.col-md-6.approach-content h1 {
+    color: black;
+    font-weight: 800;
+    
+}
+
+.col-md-6.approach-content p {
+    width: 90%;
+    color: black;
+    font-size: 1.3rem;
+    line-height: 30px;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.btn.our-approach-btn {
+    border: 1px solid rgb(17, 17, 17);
+    border-radius: 5px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.btn.our-approach-btn:hover {
+    background: black;
+    background-color: black;
+    color: #fff !important;
+}
+
+/* About section*/
+
+section#about_section {
+    padding-top: 60px;
+}
+
+.about_accordion {
+    width: 100vw;
+}
+section#about_section img {
+    width: 100vw;
+    max-height: 370px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section#about_content {
+    margin-bottom: 60px;
+}
+
+.about-desc-img img {
+    width: 100%;
+    max-height: 260px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-desc-img {
+    padding-top: 15px !important;
+}
+
+li.breadcrumb-item a {
+    color: #423d3d;
+}
+
+ol.breadcrumb {
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.about-desc-img h5 {
+    font-weight: 700;
+}
+
+.about-desc-img p {
+    line-height: 30px;
+    color: #777;
+}
+
+section#about_content {
+    padding-top: 80px;
+}
+
+h1.about-us {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: rgb(52, 170, 101);
+}
+p.about-note {
+    line-height: 30px;
+    text-align: justify;
+    color: #777;
+}
+
+h1.mission, h1.vision {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 30px; 
+    color: rgb(52, 170, 101);
+}
+
+p.mission-content {
+    line-height: 30px;
+    text-align: justify;
+    color: #777;
+}
+
+p.vision-content {
+    line-height: 30px;
+    text-align: justify;
+    color: #777;
+}
+
+/* mission and vision begins */
+section#mission-vision-banner {
+    background-color: rgb(4, 44, 4);
+    max-height: 400px;
+}
+
+.mission-vision-accordion.text-center {
+    padding-top: 80px;
+}
+
+.mission-vision-accordion.text-center h1 {
+    color: rgb(236, 231, 231);
+    font-weight: 900;
+    font-size: 3rem;
+    text-transform: capitalize;
+}
+
+.mission-vision-accordion.text-center h2 {
+    color: rgb(184, 179, 179);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+a.btn.our-mission-btn {
+    background-color: rgb(52, 170, 101);
+    border: 1px;
+    border-radius: 10px !important;
+    margin-top: 35px;
+    color: rgb(228, 222, 222);
+    width: 170px;
+    height: 45px;
+    padding-top: 10px;
+}
+
+a.btn.our-mission-btn:hover {
+    background: rgb(219, 215, 215);
+    color: rgb(52, 170, 101);
+}
+/* vision ends */
+
+/* docs Begins */
+.articles-and-docs {
+    background-color: #fff !important;
+    margin-top: 60px;
+    min-height: 400px;
+    z-index: 2;
+    border-top: 1px;
+    border-radius: 5px;
+}
+
+.articles-and-docs h5 {
+    font-weight: 600;
+}
+
+.articles-and-docs p {
+    line-height: 27px;
+    color: #777;
+}
+
+.articles.far.fa-comment-alt, .docs.fas.fa-book-open {
+    font-size: 60px;
+    padding-top: 45px;
+    margin-bottom: 30px;
+    color: rgb(52, 170, 101);
+}
+
+.articles-and-docs a, .articles-and-docs a:hover {
+    color: rgb(52, 170, 101);
+    font-weight: 900;
+}
+
+.articles-and-docs a:hover {
+    text-transform: uppercase;
+}
+
+/* Main mission section */
+section#mission-banner {
+    background-color: black;
+    height: 550px;
+    margin-top: 80px;
+    margin-bottom: 370px;
+}
+
+.mission-page-accordion {
+    padding-top: 90px;
+}
+
+section#mission-banner h1 {
+    color: #fff;
+}
+
+section#mission-banner h2 {
+    color: rgb(255, 247, 247);
+}
+
+i.articles.fas.fa-diagnoses, .docs.fas.fa-file-medical {
+    font-size: 60px;
+    padding-top: 45px;
+    margin-bottom: 30px;
+    color: rgb(52, 170, 101);
+}
+
+/* contact us */
+section.contact_us {
+    margin-top: 75px;
+    background-color: rgb(245, 239, 239);
+}
+
+.contact_us_wrap{
+    padding-top: 50px;
+    align-content: center;
+}
+/* contact us ends */
+
+/* latest article list begins */
+section.article-list-page {
+    min-height: 350px;
+    margin-top: 85px;
+    background: url(../images/showcase/concept-of-covid-19.jpg) no-repeat center center fixed;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;
+}
+
+.article-list-hero {
+    padding-top: 90px;
+}
+
+.article-list-hero-content h3 {
+    font-weight: 700;
+    color: azure;
+}
+
+.article-content-wrap {
+    margin-top: 60px;
+    padding-bottom: 60px;
+}
+
+a.card-title.article-by-category-link {
+    text-transform: uppercase;
+    color: rgb(110, 108, 108);
+    font-size: 0.8em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+a.card-title.article-title-link {
+    color: rgb(58, 57, 57);
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    font-weight: 500;
+    transform: skew(-10deg);
+    margin-bottom: 0;
+}
+
+.article-content-wrap a:hover {
+    color: rgb(52, 170, 101);
+}
+
+.article-content-wrap img {
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+}
+
+.article-content-wrap p {
+    margin-top: 30px;
+    line-height: 30px;
+    color: #777;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.card.all_articles_card {
+    border: 0;
+    border-radius: 0;
+}
+
+.article-content {
+    background: transparent;
+}
+
+section#article_detail {
+    margin-top: 120px;
+    margin-bottom: 60px;
+}
+
+.card.article-detail {
+    border: 0;
+    border-radius: 0;
+}
+
+.articles-cols.col-md-4.text-center {
+    padding-left: 7px !important;
+    padding-right: 7px !important;
+    margin-bottom: 30px !important;
+}
+
+.card.article-detail h5 {
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    border-top: 2px solid rgb(52, 170, 101);
+    padding-top: 30px;
+    font-size: 1.7em;
+    text-align: center;
+}
+
+section#article_detail img {
+    width: 100%;
+    height: 350px;
+    margin-bottom: 45px;
+    padding-top: 30px;
+}
+
+.card.article-detail p {
+    line-height: 25px;
+}
+
+.articles-detail-sidebar h4 {
+    color: rgb(17, 117, 59);
+    font-size: 1.2em;
+}
+
+ul.list-group.articles-detail-sidebar {
+    border-top: 2px solid rgb(52, 170, 101);
+    border-bottom: 1px solid rgb(52, 170, 101);
+    border-radius: 5px;
+}
+
+a.paginate-articles{
+    margin-right: 3px;
+    margin-left: 3px;
+}
+
+a.paginate-articles:hover {
+    color: #fff;
+}
+
+.row.paginated {
+    border-top: 1px dashed #777;
+    margin-top: 45px;
+}
+
+.col-md-3.articles-right-sidebar {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* latest article list ends  */
+
+
+/* collections section */
+section.collections {
+    min-height: 350px;
+    background: transparent;
+}
+
+/* footer section styles */
+section#footer {
+    background-color: rgb(201, 194, 194);
+    min-height: 300px;
+    color: #031220;
+}
+
+.footer_wrapper {
+    padding-top: 60px;
+    margin-bottom: 45px;
+}
+
+ul.footer_items {
+    padding-left: 8px;
+}
+
+ul.footer_items {
+    margin-bottom: 8px !important;
+}
+
+ul.footer_items li {
+    text-decoration: none;
+    list-style: none;
+    line-height: 30px;
+    font-size: 12px;
+}
+
+ul.footer_items a {
+    color: #423d3d;
+}
+
+a.email_us.pl-2 {
+    color: #423d3d;
+    font-size: 12px;
+}
+
+section#footer h5 {
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+i.fa.fa-phone-square, i.fab.fa-whatsapp {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+i.fa.fa-phone-square::before, i.fab.fa-whatsapp::before {
+   padding-right: 5px;
+}
+
+.fa-envelope::before{
+    font-size: 12px;
+}
+
+p.pl-2.footer-email {
+    margin-top: 0;
+}
+
+p.copy {
+    color: #777;
+    font-size: small;
+}
+
+.btn.newsletter_subscribe_btn {
+    background: black;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 3px;
+}
+
+.btn.newsletter_subscribe_btn:hover {
+    background: rgb(52, 170, 101);
+}
+
+#div_id_email.form-group {
+    margin-bottom: 5px;
+    background: rgb(177, 175, 175);
+    border-radius: 1px rgb(206, 203, 203); 
+}
+
+
+.copyright-section {
+    background: #031220;
+    width: 100vw;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    min-height: 60px;
+}
+
+.copyright-wrap {
+    padding-top: 15px;
+}
+
+/* user section */
+section.user-screen {
+    padding-top: 90px;
+    background-color: rgb(245, 239, 239);
+    min-height: 300px;
+}
+
+a.forgot_passwor_link {
+    color: #777;
+}
+
+.login-screen-wrap {
+    padding-top: 45px;
+}
+
+a.btn.btn-link.pl-0.mb-5.create_new_account {
+    color: rgb(52, 170, 101);
+}
+
+#div_id_email.form-group {
+    background: transparent !important;
+}
+
+.password_reset_content_wrap {
+    padding-top: 45px;
+    padding-bottom: 60px;
+}
+
+/* Order items list begins */
+section.order-items-list {
+    min-height: 300px;
+    padding-top: 150px;
+    margin-bottom: 90px;
+}
+
+a.dark-grey-text {
+    text-transform: capitalize;
+}
+
+main.order_summary {
+    background-color: rgb(245, 239, 239);
+}
+th, td {
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;
+}
+
+tr.items-table-head, tr.amount-payable {
+    background-color: black;
+    color: #fff;
+    font-weight: 700;
+}
+
+tr.order-total {
+    background-color: rgb(196, 191, 191);
+    color: black;
+}
+
+tr.order-vat {
+    background-color: rgb(32, 58, 40);
+}
+
+td.item-title {
+    text-transform: capitalize;
+}
+
+.table-responsive.text-nowrap {
+    padding-top: 130px;
+}
+
+i.fa.fa-plus, i.fa.fa-minus {
+    color: #777;
+    font-size: 10px;
+}
+/* Order items ends */
+
+/* Visit store section styles */
+section.how-to-buy {
+    min-height: 450px;
+    margin-top: 80px;
+    background-color: rgb(15, 1, 1);
+}
+
+.wrap {
+    padding-top: 60px;
+    text-align: center;
+}
+
+ .wrap h2{
+    color: white;
+    margin-top: 50px;
+    padding-left: 0;
+    font-weight: 600;
+}
+
+.wrap p {
+    color: rgb(238, 235, 235);
+    line-height: 30px;
+}
+
+p.order-help {
+    font-size: 0.9rem;
+    line-height: 25px;
+}
+
+/* t&c section*/
+section.legal {
+    background: rgb(2, 44, 2);
+    min-height: 300px;
+    margin-top: 70px;
+}
+
+section.legal h1 {
+    color: #fff;
+    padding-top: 70px;
+}
+
+section.legal p {
+    color: rgb(201, 197, 197);
+}
+
+.container.policy-content-wrap {
+    padding-top: 70px;
+    margin-bottom: 60px;
+}
+
+.container.policy-content-wrap p {
+    line-height: 25px;
+}
+
+.policy-content li {
+    line-height: 25px;
+}
+
+a.policy_list {
+    color: #777;
+}
+
+/* Affiliate section begins */
+section.join-affiliate, section.partner-registration {
+    margin-top: 70px;
+    min-height: 300px;
+    padding-bottom: 70px;
+}
+
+section.partner-registration {
+    background-color: rgb(245, 239, 239);
+}
+
+.join-affiliate-wrap {
+    padding-top: 45px;
+}
+
+.container.affiliate {
+    border-top: 1px solid black;
+}
+
+.container.registration-reg {
+    padding-top: 45px;
+}
+
+.partner-reg-btn {
+    padding-left: 5px !important;
+}
+
+section.partner-reg-success {
+    min-height: 300px;
+    margin-top: 70px;
+}
+.container.reg-success {
+    padding-top: 15px;
+}
+
+section.partner-reg-success a {
+    color: black;
+    font-weight: 700;
+    border-bottom: 1px solid;
+    border-radius: 0;
+    padding: 0 0 2px 0;
+    line-height: 8px;
+    margin-left: 10px;
+}
+
+ul#id_medium {
+    list-style: none;
+    padding-left: 20px;
+    color: rgb(124, 118, 118);
+    border: 1px solid;
+    border-radius: 5px;
+    padding-top: 5px;
+    
+}
+
+ul#id_medium li {
+    display: inline;
+    margin-right: 10px;
+    padding-top: 10px;
+}
+
+/* Affiliate section ends */
+
+/* Prostate page begins */
+
+section.prostate {
+    background-color: rgb(3, 27, 3);
+    min-height: 200px;
+    margin-top: 60px;
+    padding-bottom: 45px;
+}
+
+.prostate-banner-wrap {
+    padding-top: 45px;
+}
+
+.prostate h2{
+    color: white;
+    font-weight: 600;
+    padding-top: 20px;
+}
+
+.prostate p {
+    color: rgb(238, 236, 236);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.btn.enlarged-prostate-buy-prostaright {
+    background-color: transparent;
+    color: #cec8c8;
+    text-transform: uppercase;
+    padding: 0 12px 0 8px;
+    border-left: 1px #cec8c8 solid;
+    border-radius: 0;
+    line-height: 8px;
+    box-sizing: border-box;
+    font-size: 0.8rem;
+}
+
+.prostate-main-content-wrap {
+    padding-top: 60px;
+}
+
+section.prostate-main-content {
+    min-height: 450px;
+    margin-bottom: 80px;
+}
+
+.prostate-main-content-wrap h1 {
+    font-size: 2.3rem;
+    line-height: 45px;
+    font-weight: 600;
+}
+
+
+.prostate-main-content-wrap h3 {
+    margin-top: 30px;
+    font-weight: 600;
+}
+
+.prostate-main-content-wrap p {
+    line-height: 30px;
+    font-size: 1rem;
+    margin-top: 20px;
+    padding-right: 25px;
+}
+
+ul.bph-signs li{
+    line-height: 30px;
+}
+
+a.treat-prostate {
+    color: rgb(52, 170, 101);
+    font-weight: 600;
+}
+
+.prostate-main-points {
+    padding-top: 30px;
+    margin-bottom: 40px;
+}
+
+ul.enlarged-prostate-nav-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+
+li.prostate-nav-list-items {
+    border-right: 1px solid;
+    margin-right: 25px;
+}
+
+a.enlarged-prostate-nav-links {
+    padding-left: 0;
+    padding-right: 25px;
+    color: rgb(52, 170, 101);
+    font-weight: 600;
+    font-size: 1em;
+}
+
+a.enlarged-prostate-nav-links:hover {
+    color: #777;
+    text-decoration: none;
+}
+
+.col-md-4.pt-4.infographic {
+    border-top: 2px solid rgb(52, 170, 101);
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 20px;
+}
+
+.card-header.natural-medicine-infogrphic {
+    background: rgb(52, 170, 101);
+}
+
+.card-header.natural-medicine-infogrphic h1 {
+    font-size: 1.3rem;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.card-header.natural-medicine-infogrphic h5 {
+    color: #f3e9e9;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.card-body.infographic-content {
+    background: #cec8c8;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+a.card-title.infographic-links {
+    color: rgb(59, 57, 57);
+    font-weight: 700;
+}
+
+.card-body.infographic-content h5 {
+    font-size: 1em;
+    line-height: 23px;
+    padding-top: 6px;
+    margin-bottom: 20px;
+    color: rgb(100, 98, 98);
+}
+
+/* Prostate page ends */
+
+/* faq section style begins */
+section.faqs {
+    margin-bottom: 60px;
+}
+.faq-content-wrap {
+    padding-top: 50px;
+}
+.card-body.faq-answer {
+    padding-left: 60px;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    color: #777;
+}
+.btn.btn-link.faq-btn {
+    color: rgb(52, 170, 101);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.btn.btn-link.faq-btn:hover {
+    text-decoration: none;
+    color: black;
+}
+.card-header {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+a.article-snippet-menu {
+    color: #818182;
+}
+/* faq section style ends */
+
+/* Payment section*/
+.payment-page{
+    border-top-width: 0px !important;
+}
+img.payment-cards {
+    border: 0px !important;
+    width: 160px;
+
+}
+/**/
