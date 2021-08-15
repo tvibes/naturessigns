@@ -229,6 +229,10 @@
         min-height: 880px;
     }
 
+    .hero-content-wrapper {
+        padding-top: 70px;
+    }
+
     .mission-vision-accordion.text-center {
         min-height: 400px;
     }
